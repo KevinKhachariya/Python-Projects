@@ -1,3 +1,5 @@
+# This project demonstrates simple hangman game where users have a fixed amount of lives which they use to guess the correct word.
+
 import random
 from words import words
 import string

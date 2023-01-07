@@ -1,3 +1,6 @@
+## This project demonstrate using "random" module to demonstrate conditionals and looping in python.
+# Goal: guess() function lets a user guess a random number. comp_guess() Lets your computer guess a random number.
+
 import random
 
 def guess(x):
@@ -29,7 +32,10 @@ def comp_guess(x):
             low = guess + 1
     
     print(f"Correct guess computer: it was {guess}")
+
+
+guess(10) # User guesses
         
-user_input = int(input("User please provide a number for computer to guess: "))
-comp_guess(user_input)
+user_input = int(input("User please provide a number for computer to guess: ")) 
+comp_guess(user_input) # Computer guesses
         

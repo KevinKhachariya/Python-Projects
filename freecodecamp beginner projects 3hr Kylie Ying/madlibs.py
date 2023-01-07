@@ -1,4 +1,4 @@
- # madlib is a game where we read a sentence which has blank spaces filled person1 and read by someone other than person1
+ # madlib is a game where we read a sentence which has blank spaces filled by person1 and read by someone other than person1
 
  # 3 ways to concat strings
     # 1. + operator

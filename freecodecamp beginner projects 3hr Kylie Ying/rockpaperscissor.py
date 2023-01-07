@@ -1,3 +1,5 @@
+## This project demonstrate simple rock, paper and scissors game which a user plays against their computer.
+
 import random
 
 def play():
