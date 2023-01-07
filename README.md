@@ -2,7 +2,7 @@
 
 - In my opinion, the best way to learn the basics of a programming language is to plagiarize existing beginner projects/examples generously contributed for free by mentors on the internet.
 
-### Resources I use in this repo to plagiarize python projects/examples :.
+### Resources I use in this repo to plagiarize python projects/examples :
 <ul>
   <li><a href="https://www.freecodecamp.org/">freeCodeCamp.org</a></li>
     <ul>
