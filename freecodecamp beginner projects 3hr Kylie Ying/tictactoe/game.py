@@ -1,7 +1,7 @@
 # This project covers inheritance and list comprehension. Using which command line tic-tac-toe game is created.
 
 import time
-from player import HumanPlayer, RandomComputerPlayer
+from player import HumanPlayer, RandomComputerPlayer, GeniusComputerPlayer
 
 class TicTacToe:
     def __init__(self):
@@ -108,16 +108,31 @@ def play(game, x_player, o_player, print_game=True):
             letter = 'O' if letter == 'X' else 'X' # we switch turns here
         
         # tiny break between turns
-        time.sleep(0.8)
+        if print_game:
+            time.sleep(0.8)
     
     if print_game:
         print("It's a tie!")
 
 if __name__ == '__main__':
-    x_player = HumanPlayer('X')
-    o_player = RandomComputerPlayer('O')
-    t = TicTacToe()
-    play(t, x_player, o_player, print_game=True)
+    x_wins = 0
+    o_wins = 0
+    ties = 0
 
+    for _ in range(100): # for the 1st 100 iterations X won 0 times, O won 799 times and 201 ties!
+    # o_player = RandomComputerPlayer('O')
+        x_player = RandomComputerPlayer('X')
+        o_player = GeniusComputerPlayer('O') # This player never loses. Its either a tie or win!
+        t = TicTacToe()
+        result = play(t, x_player, o_player, print_game=False)
+
+        if result == 'X':
+            x_wins += 1
+        elif result == 'O':
+            o_wins += 1
+        else:
+            ties += 1
+    
+    print(f'Results after 100 iterations, we see {x_wins} X wins, {o_wins} O wins and {ties} ties.')
 
 
